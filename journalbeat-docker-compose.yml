@@ -7,7 +7,7 @@ services:
        networks:
         - journalbeat
        volumes:
-        - /run/log/journal:/run/log/journal:ro
+        - /var/log/journal:/run/log/journal:ro
         - /etc/machine-id:/etc/machine-id:ro
        deploy:
         mode: global
